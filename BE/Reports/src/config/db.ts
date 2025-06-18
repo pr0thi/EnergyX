@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://Bhoomika:Hope630@aws-test.tgbpmou.mongodb.net/EnergyX';
+const MONGODB_URI = process.env.MONGODB_URI;
 
 export const connectToDatabase = async (): Promise<void> => {
   try {
