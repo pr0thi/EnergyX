@@ -9,9 +9,8 @@ export async function connectDB(): Promise<void> {
   if (isConnected) return;
 
   try {
-    //const mongoUri = process.env.MONGO_URI;
-    
-    const mongoUri = "mongodb+srv://Bhoomika:Hope630@aws-test.tgbpmou.mongodb.net/EnergyX"
+    const mongoUri = process.env.MONGO_URI;
+ 
 
     if (!mongoUri) {
       throw new Error('MONGO_URI not found in environment variables');
